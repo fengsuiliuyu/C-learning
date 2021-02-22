@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
 	string a;
+	cout << "除了1以外的任何输入都会被跳过，请输入：" << endl;
 	cin >> a;
 	if (a.compare("1"))
 	{
