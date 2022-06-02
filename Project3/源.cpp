@@ -4,13 +4,25 @@ using namespace std;
 int main()
 {
 	string a;
-	cout << "除了1以外的任何输入都会被跳过，请输入：" << endl;
-	cin >> a;
-	if (a.compare("1"))
+	string b;
+	while (True)
 	{
-		cout << "1都能打歪来！" << endl;
+		cout << "除了1以外的任何输入都会被跳过，请输入：" << endl;
+		cin >> a;
+		if (a == '1')
+		{
+			cout << "好！输入0退出程序" << end;
+		}
+		else
+		{
+			cout << "1都能输歪来，拉跨！" << endl << "再来！或者按0退出！" << endl;
+			cin >> b;
+			if (b == '0')
+			{
+				break
+			}
+		}
 	}
-
 	system("pause");
 	return 0;
 }
